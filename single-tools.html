@@ -168,7 +168,7 @@
                                             <th>Offer Price</th>
                                             <th>Usd Price</th>
                                             <th>Product Discription</th>
-                                            <th>Product Thumbnail</th>
+                                            <th class="thumbnail-img">Product Thumbnail</th>
                                             <th>Validity</th>
                                             <th>Credit</th>
                                             <th>Status</th>
@@ -184,7 +184,10 @@
                                             <td><input type="number" class="form-control" name="" value="450"></td>
                                             <td><input type="number" class="form-control" name="" value="444"></td>
                                             <td><textarea class="form-control" name="" id="">ubersuggest,grammarly,Canva</textarea></td>
-                                            <td><input type="text" class="form-control" name="" value="Ubersuffest"></td>
+                                            <td>
+                                                <img src="assets/img/thumbnail/semrush.png" alt="Thumbnail" class="thumbnail-img">
+                                                <input type="file" class="form-control" name="">
+                                            </td>
                                             <td><input type="text" class="form-control" name="" value="30 days"></td>
                                             <td><input type="number" class="form-control" name="" value="2"></td>
                                             <td>
@@ -356,4 +359,15 @@
     table thead tr th.action {
        min-width: 50px;
     }
+
+    /* Thumbnail  */
+    .thumbnail-img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+   }
+   .form-control:focus, .datatable-input:focus {
+    box-shadow: none; 
+  }
+
 </style>
