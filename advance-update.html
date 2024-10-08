@@ -137,6 +137,15 @@
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                             <li class="breadcrumb-item active">Tables</li>
                         </ol>
+                        <div class="mb-4">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Add Tools
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Update Cookies
+                            </button>
+                        </div>
                         <!-- <div class="card mb-4">
                             <div class="card-body">
                                 DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
@@ -153,33 +162,38 @@
                                 <table class="table table-responsive table-striped" id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>Serial</th>
-                                            <th>User Name</th>
-                                            <th>Email</th>
-                                            <th>IpAddress</th>
-                                            <th>Country</th>
-                                            <th>City</th>
-                                            <th>Device</th>
-                                            <th>IOS</th>
-                                            <th>VisitorID</th>
-                                            <th>Browser</th>
-                                            <th>Time</th>
-                                            <th>Action</th>
+                                            <th>Tools Name</th>
+                                            <th>Redirect Method</th>
+                                            <th>Redirect Url</th>
+                                            <th>Redirect Type</th>
+                                            <th>Cookies option</th>
+                                            <th>enc cookies</th>
+                                            <th class="action">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>01</td>
-                                            <td>Abdullah</td>
-                                            <td>abdullah@gmail.com</td>
-                                            <td>37.111.228 </td>
-                                            <td>Bangladesh</td>
-                                            <td>Dhaka</td>
-                                            <td>Desktop</td>
-                                            <td>Windows</td>
-                                            <td>0e5d8fac68e2af5e9fc7bafbe3a7d37a</td>
-                                            <td>Chrome</td>
-                                            <td>2011/04/25</td> 
+                                            <td><input type="text" class="form-control" name="" value="semrush"></td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="extension">Etension</option>
+                                                    <option value="cloud">Cloud</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" class="form-control" name="" value="https://app.neilpatel.com/"></td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="extension">cookies</option>
+                                                    <option value="cloud">session</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="extension">cookies</option>
+                                                    <option value="cloud">session</option>
+                                                </select>
+                                            </td>
+                                            <td><textarea class="form-control" name="" id="">ubersuggest,semrush,grammarly,Canva</textarea></td>
                                             <td>
                                                 <div class="d-flex">
                                                     <button class="btn btn-sm btn-primary me-2">Update</button>
@@ -188,17 +202,28 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>02</td>
-                                            <td>Shamim</td>
-                                            <td>abdullah@gmail.com</td>
-                                            <td>37.111.228 </td>
-                                            <td>India</td>
-                                            <td>Kalkata</td>
-                                            <td>Laptop</td>
-                                            <td>Linux</td>
-                                            <td>0e5d8fac68e2af5e9fc7bafbe3a7d37a</td>
-                                            <td>Opera</td>
-                                            <td>2011/04/25</td> 
+                                            <td><input type="text" class="form-control" name="" value="semrush2"></td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="extension">Etension</option>
+                                                    <option value="cloud">Cloud</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" class="form-control" name="" value="https://app.neilpatel.com/"></td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="extension">cookies</option>
+                                                    <option value="cloud">session</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="extension">cookies</option>
+                                                    <option value="cloud">session</option>
+                                                </select>
+                                            </td>
+                                            <td><textarea class="form-control" name="" id="">ubersuggest,semrush,grammarly,Canva</textarea></td>
+                                            
                                             <td>
                                                 <div class="d-flex">
                                                     <button class="btn btn-sm btn-primary me-2">Update</button>
@@ -207,17 +232,27 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>01</td>
-                                            <td>Abdullah</td>
-                                            <td>abdullah@gmail.com</td>
-                                            <td>37.111.228 </td>
-                                            <td>Bangladesh</td>
-                                            <td>Dhaka</td>
-                                            <td>Desktop</td>
-                                            <td>Windows</td>
-                                            <td>0e5d8fac68e2af5e9fc7bafbe3a7d37a</td>
-                                            <td>Chrome</td>
-                                            <td>2011/04/25</td> 
+                                            <td><input type="text" class="form-control" name="" value="semrush2"></td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="extension">Etension</option>
+                                                    <option value="cloud">Cloud</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" class="form-control" name="" value="https://app.neilpatel.com/"></td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="extension">cookies</option>
+                                                    <option value="cloud">session</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="extension">cookies</option>
+                                                    <option value="cloud">session</option>
+                                                </select>
+                                            </td>
+                                            <td><textarea class="form-control" name="" id="">ubersuggest,semrush,grammarly,Canva</textarea></td>
                                             <td>
                                                 <div class="d-flex">
                                                     <button class="btn btn-sm btn-primary me-2">Update</button>
@@ -252,46 +287,42 @@
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Add user</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Package Tools</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-6">
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">User Name</label>
+                                <label for="exampleInputEmail1" class="form-label">Package Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Product Name</label>
                                 <input type="text" class="form-control" >
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input type="email" class="form-control" >
-                            </div>                        
+                                <label for="exampleInputEmail1" class="form-label">Price</label>
+                                <input type="text" class="form-control" >
+                            </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Password</label>
-                                <input type="password" class="form-control" >
-                            </div>                        
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Address</label>
-                                <input type="test" class="form-control" >
-                            </div>                        
+                                <label for="exampleInputEmail1" class="form-label">Offer price</label>
+                                <input type="text" class="form-control" >
+                            </div>
                         </div>
                         <div class="col-6">
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Phone</label>
-                                <input type="number" class="form-control" >
-                            </div> 
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email Status</label>
+                                <label for="exampleInputEmail1" class="form-label">Usd</label>
                                 <input type="text" class="form-control" >
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Country</label>
-                                <input type="test" class="form-control" >
-                            </div> 
+                                <label for="exampleInputEmail1" class="form-label">Validity</label>
+                                <input type="text" class="form-control" >
+                            </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">City</label>
-                                <input type="test" class="form-control" >
-                            </div>  
+                                <label for="exampleInputEmail1" class="form-label">Credit</label>
+                                <input type="number" class="form-control" >
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -310,10 +341,27 @@
     </body>
 </html>
 
-
 <style>
     /* Custom Modal Width */
     .modal {   
         --bs-modal-width: 700px;
     }
+
+    /* Table data padding */
+    table thead tr th {
+       min-width: 120px;
+    }
+    table thead tr th.serial {
+       min-width: 50px;
+    }
+    table thead tr th.action {
+       min-width: 50px;
+    }
+    .form-control:focus, .datatable-input:focus {
+    box-shadow: none; 
+    }
+    .form-select:focus, .datatable-selector:focus {
+    box-shadow: none;
+    }
+
 </style>
