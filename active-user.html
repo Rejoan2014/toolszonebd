@@ -158,10 +158,10 @@
                                 DataTable Example
                             </div>
                             <div class="card-body">
-                                <table id="datatablesSimple">
+                                <table class="table table-responsive table-striped" id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>Serial</th>
+                                            <th class="serial">Serial</th>
                                             <th>User Name</th>
                                             <th>Email</th>
                                             <th>Number</th>
@@ -169,7 +169,7 @@
                                             <th>Created at</th>
                                             <th>Single Tools</th>
                                             <th>Packages Tools</th>
-                                            <th>Action</th>
+                                            <th class="action">Action</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -321,4 +321,22 @@
     .modal {   
         --bs-modal-width: 700px;
     }
+
+    /* Table data padding */
+    table thead tr th {
+       min-width: 120px;
+    }
+    table thead tr th.serial {
+       min-width: 50px;
+    }
+    table thead tr th.action {
+       min-width: 50px;
+    }
+    .form-control:focus, .datatable-input:focus {
+    box-shadow: none; 
+    }
+    .form-select:focus, .datatable-selector:focus {
+    box-shadow: none;
+    }
+
 </style>

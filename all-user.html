@@ -158,10 +158,10 @@
                                 DataTable Example
                             </div>
                             <div class="card-body">
-                                <table id="datatablesSimple">
+                                <table  class="table table-responsive table-striped" id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>Serial</th>
+                                            <th class="serial">Serial</th>
                                             <th>User Name</th>
                                             <th>Email</th>
                                             <th>Number</th>
@@ -169,22 +169,9 @@
                                             <th>Created at</th>
                                             <th>Single Tools</th>
                                             <th>Packages Tools</th>
-                                            <th>Action</th>
+                                            <th class="action">Action</th>
                                         </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Serial</th>
-                                            <th>User Name</th>
-                                            <th>Email</th>
-                                            <th>Number</th>
-                                            <th>Email Status</th>
-                                            <th>Created at</th>
-                                            <th>Single Tools</th>
-                                            <th>Packages Tools</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </tfoot>
+                                    </thead>                   
                                     <tbody>
                                         <tr>
                                             <td>01</td>
@@ -193,8 +180,23 @@
                                             <td>017483979837</td>
                                             <td>Verified</td>
                                             <td>2011/04/25</td>
-                                            <td>Canva</td>
-                                            <td>Lite package</td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option active>Select Product</option>
+                                                    <option value="shimrush">Shimrush</option>
+                                                    <option value="grammarly">Gramarly</option>
+                                                    <option value="canava">Canava</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="" active>Select Package</option>
+                                                    <option value="lite">Lite Package</option>
+                                                    <option value="mega">Mega Package</option>
+                                                    <option value="advance">Advance Package</option>
+                                                    <option value="seo">Seo Package</option>
+                                                </select>
+                                            </td>
                                             <td><button class="btn btn-primary btn-sm">Update</button></td>
                                         </tr>
                                         <tr>
@@ -204,8 +206,23 @@
                                             <td>017483979837</td>
                                             <td>Verified</td>
                                             <td>2011/04/25</td>
-                                            <td>Semrush</td>
-                                            <td>Mega package</td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option active>Select Product</option>
+                                                    <option value="shimrush">Shimrush</option>
+                                                    <option value="grammarly">Gramarly</option>
+                                                    <option value="canava">Canava</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="" active>Select Package</option>
+                                                    <option value="lite">Lite Package</option>
+                                                    <option value="mega">Mega Package</option>
+                                                    <option value="advance">Advance Package</option>
+                                                    <option value="seo">Seo Package</option>
+                                                </select>
+                                            </td>
                                             <td><button class="btn btn-primary btn-sm">Update</button></td>
                                         </tr>
                                         <tr>
@@ -215,8 +232,23 @@
                                             <td>017483979837</td>
                                             <td>Verified</td>
                                             <td>2011/04/25</td>
-                                            <td>Canva</td>
-                                            <td>Lite package</td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option active>Select Product</option>
+                                                    <option value="shimrush">Shimrush</option>
+                                                    <option value="grammarly">Gramarly</option>
+                                                    <option value="canava">Canava</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="" active>Select Package</option>
+                                                    <option value="lite">Lite Package</option>
+                                                    <option value="mega">Mega Package</option>
+                                                    <option value="advance">Advance Package</option>
+                                                    <option value="seo">Seo Package</option>
+                                                </select>
+                                            </td>
                                             <td><button class="btn btn-primary btn-sm">Update</button></td>
                                         </tr>
                                         <tr>
@@ -226,8 +258,23 @@
                                             <td>017483979837</td>
                                             <td>unVerified</td>
                                             <td>2011/04/25</td>
-                                            <td>chatgpt</td>
-                                            <td>Lite package</td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option active>Select Product</option>
+                                                    <option value="shimrush">Shimrush</option>
+                                                    <option value="grammarly">Gramarly</option>
+                                                    <option value="canava">Canava</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select class="form-select" name="" id="">
+                                                    <option value="" active>Select Package</option>
+                                                    <option value="lite">Lite Package</option>
+                                                    <option value="mega">Mega Package</option>
+                                                    <option value="advance">Advance Package</option>
+                                                    <option value="seo">Seo Package</option>
+                                                </select>
+                                            </td>
                                             <td><button class="btn btn-primary btn-sm">Update</button></td>
                                         </tr>
                                     </tbody>
@@ -321,4 +368,22 @@
     .modal {   
         --bs-modal-width: 700px;
     }
+
+    /* Table data padding */
+    table thead tr th {
+       min-width: 120px;
+    }
+    table thead tr th.serial {
+       min-width: 50px;
+    }
+    table thead tr th.action {
+       min-width: 50px;
+    }
+    .form-control:focus, .datatable-input:focus {
+    box-shadow: none; 
+    }
+    .form-select:focus, .datatable-selector:focus {
+    box-shadow: none;
+    }
+
 </style>
